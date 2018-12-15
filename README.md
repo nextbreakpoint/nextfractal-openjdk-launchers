@@ -21,6 +21,12 @@ The script will download the [pre-built JDK and static JLI lib](https://github.c
 
 ### Build launcher for Windows
 
+Install Cygwin 2.5.x. Download setup tool from https://www.cygwin.com/:
+
+Install the build tools with command:
+
+    /cygdrive/c/Users/Administrator/Downloads/setup-x86_64 -q -P make -P unzip -P wget -P mingw32-w64
+
 Run the build script from window directory:
 
     sh build.sh
@@ -30,6 +36,11 @@ The script will download the [pre-built JDK](https://github.com/nextbreakpoint/n
 
 ### Build launcher for Fedora
 
+Install the build tools with commands:
+
+    sudo yum groupinstall -y "Development Tools"
+    sudo yum install -y gcc-c++
+
 Run the build script from fedora directory:
 
     sh build.sh
@@ -38,6 +49,10 @@ The script will download the [pre-built JDK](https://github.com/nextbreakpoint/n
 
 
 ### Build launcher for Debian
+
+Install the build tools command:
+
+    sudo apt-get install -y build-essential
 
 Run the build script from debian directory:
 
