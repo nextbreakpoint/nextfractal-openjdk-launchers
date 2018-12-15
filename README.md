@@ -25,7 +25,7 @@ Install Cygwin 2.5.x. Download setup tool from https://www.cygwin.com/:
 
 Install the build tools with command:
 
-    /cygdrive/c/Users/Administrator/Downloads/setup-x86_64 -q -P make -P unzip -P wget -P mingw32-w64
+    /cygdrive/c/Users/Administrator/Downloads/setup-x86_64 -q -P make -P unzip -P wget -P ingw64-x86_64-gcc-core -P ingw64-x86_64-gcc-g++
 
 Run the build script from window directory:
 
