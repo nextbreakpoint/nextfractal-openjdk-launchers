@@ -12,8 +12,6 @@ if [ ! -d "jdk-11.0.1" ]; then
   tar -xf jdk-11.0.1-0.tar.bz2
 fi
 
-apt-get install -y gtk3-devel
-
 mkdir -p $BUILD_DIR
 
 make

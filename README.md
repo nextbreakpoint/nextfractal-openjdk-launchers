@@ -38,8 +38,7 @@ The script will download the [pre-built JDK](https://github.com/nextbreakpoint/n
 
 Install the build tools with commands:
 
-    sudo yum groupinstall -y "Development Tools"
-    sudo yum install -y gcc-c++
+    sudo yum install -y make wget gcc-c++ gtk3-devel
 
 Run the build script from fedora directory:
 
@@ -52,7 +51,7 @@ The script will download the [pre-built JDK](https://github.com/nextbreakpoint/n
 
 Install the build tools command:
 
-    sudo apt-get install -y build-essential
+    sudo apt-get install -y build-essential wget libgtk-3-dev
 
 Run the build script from debian directory:
 
