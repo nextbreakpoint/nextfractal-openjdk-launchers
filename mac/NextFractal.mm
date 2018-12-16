@@ -242,12 +242,12 @@ int main(int argc, char **argv) {
         std::cout << "Executable path: " << execPath << std::endl;
 
         std::string basePath = GetBasePath(execPath);
-        std::string modulePathArg = "--module-path=" + basePath + "/jars";
-        std::string libraryPathArg = "-Djava.library.path=" + basePath + "/libs";
+        std::string modulePathArg = "--module-path=" + basePath + "/../Resources/jars";
+        std::string libraryPathArg = "-Djava.library.path=" + basePath + "/../Resources/libs";
         std::string addModulesArg = "--add-modules=ALL-MODULE-PATH";
         std::string locationArg = "-Dbrowser.location=" + basePath + "/../../../examples";
         std::string loggingArg = "-Djava.util.logging.config.class=com.nextbreakpoint.nextfractal.runtime.logging.LogConfig";
-        std::string jdkPath = basePath + "/jdk";
+        std::string jdkPath = basePath + "/../Resources/jdk";
 
         const char *vm_arglist[] = {
             modulePathArg.c_str(),
