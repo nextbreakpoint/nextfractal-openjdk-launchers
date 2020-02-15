@@ -1,15 +1,17 @@
 #/bin/sh
 
+export VERSION=11.0.2-0
+
 export BUILD_DIR=$(pwd)/build
 
-export JDK_ROOT=$(pwd)/jdk-11.0.1
+export JDK_ROOT=$(pwd)/nextfractal-jdk-${VERSION}
 
-if [ ! -f "jdk-11.0.1-0.tar.bz2" ]; then
-  wget -O jdk-11.0.1-0.tar.bz2 https://github.com/nextbreakpoint/nextfractal-openjdk-binaries/releases/download/v11.0.1-0/windows-jdk-11.0.1-0.zip
+if [ ! -f "windows-nextfractal-jdk-${VERSION}.zip" ]; then
+  wget -O windows-nextfractal-jdk-${VERSION}.zip https://github.com/nextbreakpoint/nextfractal-openjdk-binaries/releases/download/v${VERSION}/windows-nextfractal-jdk-${VERSION}.zip
 fi
 
-if [ ! -d "jdk-11.0.1" ]; then
-  unzip jdk-11.0.1-0.tar.bz2
+if [ ! -d "windows-nextfractal-jdk-${VERSION}" ]; then
+  unzip windows-nextfractal-jdk-${VERSION}.zip
 fi
 
 mkdir -p $BUILD_DIR
