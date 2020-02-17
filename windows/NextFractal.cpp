@@ -226,7 +226,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
 
         std::string basePath = GetBasePath(execPath);
         std::string modulePathArg = "--module-path=" + basePath + "\\jars";
-        std::string libraryPathArg = "-Djava.library.path=" + basePath + "\\libs";
+        std::string libraryPathArg = "-Djava.library.path=" + basePath;
         std::string addModulesArg = "--add-modules=ALL-MODULE-PATH";
         std::string locationArg = "-Dbrowser.location=" + basePath + "\\examples";
         std::string loggingArg = "-Djava.util.logging.config.class=com.nextbreakpoint.nextfractal.runtime.logging.LogConfig";
